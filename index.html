@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Continum · Care that continues</title>
+  <link rel="icon" href="assets/brand/continum-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="assets/brand/continum-mark.svg" alt="" class="brand-mark">
+      <span>Continum</span>
+    </div>
+    <div class="session">
+      <span id="session-info"></span>
+      <button type="button" class="btn ghost small" id="logout" data-action="logout" hidden>Log out</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="login-view"></section>
+    <section id="app-view" hidden>
+      <nav id="tabs" class="tabs" role="tablist" aria-label="Sections"></nav>
+      <div id="panel"></div>
+    </section>
+  </main>
+
+  <footer class="footer">Continum · Prototype with local data. Not for real patient data.</footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="data/seed-data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
